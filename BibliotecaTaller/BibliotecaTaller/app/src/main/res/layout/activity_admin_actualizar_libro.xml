@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/black"
+tools:context=".ClasesAdministrador.AdminActualizarLibro">
+
+<LinearLayout
+    android:id="@+id/dataLayout"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="22dp"
+    android:orientation="vertical"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:gravity="fill_horizontal"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/ivIcon"
+                    android:layout_width="68dp"
+                    android:layout_height="58dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/ic_librosinfoto" />
+
+                <TextView
+                    android:id="@+id/tvNameContact"
+                    style="@style/TextAppearance.MaterialComponents.Headline6"
+                    android:layout_width="140dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@id/ivIcon"
+                    android:gravity="center"
+                    android:text="Administrador"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tvAddressContact"
+                    style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                    android:layout_width="111dp"
+                    android:layout_height="22dp"
+                    android:layout_below="@+id/tvNameContact"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@id/ivIcon"
+                    android:gravity="center"
+                    android:text="nombre de usuario"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+                <ImageView
+                    android:id="@+id/PopupMenu"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="316dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/ic_addpopupsalir" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"/>
+
+
+                <TextView
+                    android:id="@+id/tvText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Actualizar Libro"
+                    android:textColor="@color/white"
+                    android:textSize="23dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="#FF832E" />
+</LinearLayout>
+
+<com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/tilNombre"
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="32dp"
+    android:layout_marginTop="200dp"
+    android:layout_marginEnd="32dp"
+    android:hint="Nombre Libro"
+    android:textColor="@color/white"
+    android:textColorHint="@color/white"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/tieNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_edit_text"
+        android:backgroundTint="#5A5858"
+        android:inputType="textEmailAddress"
+        android:maxLength="20"
+        android:textColor="@color/white" />
+</com.google.android.material.textfield.TextInputLayout>
+
+<com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/tilEmail"
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="32dp"
+    android:layout_marginTop="270dp"
+    android:layout_marginEnd="32dp"
+    android:hint="Autor Libro"
+    android:textColor="@color/white"
+    android:textColorHint="@color/white"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/tieEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_edit_text"
+        android:backgroundTint="#5A5858"
+        android:inputType="textEmailAddress"
+        android:maxLength="20"
+        android:textColor="@color/white" />
+</com.google.android.material.textfield.TextInputLayout>
+
+<com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/tilTelefono"
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="32dp"
+    android:layout_marginTop="340dp"
+    android:layout_marginEnd="32dp"
+    android:hint="Cantidad Libros"
+    android:textColor="@color/white"
+    android:textColorHint="@color/white"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/tieTelefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_edit_text"
+        android:backgroundTint="#5A5858"
+        android:inputType="textEmailAddress"
+        android:maxLength="20"
+        android:textColor="@color/white" />
+</com.google.android.material.textfield.TextInputLayout>
+
+<com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/tilDireccion"
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="32dp"
+    android:layout_marginTop="410dp"
+    android:layout_marginEnd="32dp"
+    android:hint="URL Libro"
+    android:textColor="@color/white"
+    android:textColorHint="@color/white"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/tieDireccion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_edit_text"
+        android:backgroundTint="#5A5858"
+        android:inputType="textEmailAddress"
+        android:maxLength="20"
+        android:textColor="@color/white" />
+</com.google.android.material.textfield.TextInputLayout>
+
+<com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/tilClave"
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="32dp"
+    android:layout_marginTop="475dp"
+    android:layout_marginEnd="32dp"
+    android:hint="Imagen Libro"
+    android:textColor="@color/white"
+    android:textColorHint="@color/white"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:ignore="SpeakableTextPresentCheck">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/tieClave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_edit_text"
+        android:backgroundTint="#5A5858"
+        android:inputType="textEmailAddress"
+        android:maxLength="20"
+        android:textColor="@color/white" />
+</com.google.android.material.textfield.TextInputLayout>
+
+<com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/tilC"
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:layout_marginStart="32dp"
+    android:layout_marginTop="540dp"
+    android:layout_marginEnd="32dp"
+    android:hint="Descripcion"
+    android:textColor="@color/white"
+    android:textColorHint="@color/white"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:ignore="SpeakableTextPresentCheck">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/tieC"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="@drawable/custom_edit_text"
+        android:backgroundTint="#5A5858"
+        android:inputType="textEmailAddress"
+        android:maxLength="20"
+        android:textColor="@color/white" />
+</com.google.android.material.textfield.TextInputLayout>
+<Button
+    android:id="@+id/btnIngresar"
+    android:layout_width="235dp"
+    android:layout_height="62dp"
+    android:layout_marginStart="72dp"
+    android:layout_marginTop="118dp"
+    android:layout_marginEnd="72dp"
+    android:layout_marginBottom="10dp"
+    android:backgroundTint="#ff4000"
+    android:text="Actualzar Libro"
+    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+    app:cornerRadius="14dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tilClave"
+    tools:ignore="TouchTargetSizeCheck" />
+</androidx.constraintlayout.widget.ConstraintLayout>
